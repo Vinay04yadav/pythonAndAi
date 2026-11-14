@@ -1,5 +1,5 @@
 #class is a reserved keyword in python for classes and usually a class name is kept using first letter capital
-
+#we don't use parenthesis while declaring class, class Car: or class Car():
 
 class Car:
     pass

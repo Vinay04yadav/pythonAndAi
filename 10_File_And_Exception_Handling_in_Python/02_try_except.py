@@ -10,7 +10,7 @@ chai_menu = {"masala" : 30, "ginger" : 40}
 # try is the safe bubble in which we can put our sensitive code.
 try:
     chai_menu["elaichi"]
-except KeyError: # at the place of KeyError we can put simple "e" as well when we don't know what error could come up exactly.
+except KeyError: # at the place of KeyError we can put simple "Exception as e" as well when we don't know what error could come up exactly.
     print("Key doesn't exist")
 
 

@@ -40,5 +40,13 @@ This folder explores concurrency, threading, multiprocessing, and the Global Int
 - [`02_multiprocessing.py`](./11_Threads_Concurrency/02_multiprocessing.py) — Running tasks in separate processes, and starting and joining multiple processes.
 - [`03_Global_Interpreter_Lock_Threading.py`](./11_Threads_Concurrency/03_Global_Interpreter_Lock_Threading.py) — The GIL's effect on CPU-bound threads and why threads can still help with I/O-bound work.
 - [`04_GIL_multiprocessing.py`](./11_Threads_Concurrency/04_GIL_multiprocessing.py) — Using multiprocessing for CPU-bound work, comparing it with threading, and protecting process startup with the main guard.
+- [`05_thread_one.py`](./11_Threads_Concurrency/05_thread_one.py) — Running independent tasks in parallel threads and waiting for both tasks to finish with `join()`.
+- [`06_thread_two.py`](./11_Threads_Concurrency/06_thread_two.py) — Starting multiple threads with different arguments to prepare separate chai orders concurrently.
+- [`07_thread_download.py`](./11_Threads_Concurrency/07_thread_download.py) — Downloading several URLs concurrently with threads, an example of threading for I/O-bound work.
+- [`08_thread_lock.py`](./11_Threads_Concurrency/08_thread_lock.py) — Protecting a shared counter with `threading.Lock` to prevent race conditions.
+- [`09_process_one.py`](./11_Threads_Concurrency/09_process_one.py) — Measuring CPU-bound work across threads and observing how the GIL affects execution.
+- [`10_process_two.py`](./11_Threads_Concurrency/10_process_two.py) — Running CPU-bound work in multiple processes to use parallel execution across processes.
+- [`11_process_queue.py`](./11_Threads_Concurrency/11_process_queue.py) — Passing results between processes with a multiprocessing queue.
+- [`12_process_value.py`](./11_Threads_Concurrency/12_process_value.py) — Sharing and safely updating a synchronized integer across processes using `multiprocessing.Value` and its lock.
 
 More notes and examples will be added as I continue learning.

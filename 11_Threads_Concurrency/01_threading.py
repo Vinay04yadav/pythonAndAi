@@ -115,7 +115,20 @@ brew_thread = threading.Thread(target=brew_orders)
 order_thread.start()
 brew_thread.start()
 
-# wait for both to finish (without this orders and brewing will be done asynchronously)
+# wait for both to finish (without this the flow will go to next statements without these things done)
+# say we have two threads or processes and a code like:
+# p1.start()
+# p2.start()
+# print("All chai served")
+# The main process starts both child processes and immediately moves to the next statement.
+
+# It doesn't wait for them to finish. So "All chai served" might get printed while the chai is still being prepared.
+
+
+# The purpose of join() is to make the main thread/process wait until a particular worker thread or process finishes its execution.
+# Also, join() is not always mandatory. If your program doesn't need to wait for the workers, you may not need it.
+
+
 order_thread.join()
 brew_thread.join()
 

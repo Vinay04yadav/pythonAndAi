@@ -32,4 +32,13 @@ This folder contains examples of Python exceptions, error handling, and working 
 - [`06_complete_order.py`](./10_File_And_Exception_Handling_in_Python/06_complete_order.py) — Combining custom errors, input checks, exception handling, and cleanup in an order-billing example.
 - [`07_File_Handling.py`](./10_File_And_Exception_Handling_in_Python/07_File_Handling.py) — Opening and writing files, and using a `with` statement to close files automatically.
 
+### `11_Threads_Concurrency/`
+
+This folder explores concurrency, threading, multiprocessing, and the Global Interpreter Lock (GIL):
+
+- [`01_threading.py`](./11_Threads_Concurrency/01_threading.py) — Concurrency versus parallelism, thread creation and coordination, and examples of overlapping tasks.
+- [`02_multiprocessing.py`](./11_Threads_Concurrency/02_multiprocessing.py) — Running tasks in separate processes, and starting and joining multiple processes.
+- [`03_Global_Interpreter_Lock_Threading.py`](./11_Threads_Concurrency/03_Global_Interpreter_Lock_Threading.py) — The GIL's effect on CPU-bound threads and why threads can still help with I/O-bound work.
+- [`04_GIL_multiprocessing.py`](./11_Threads_Concurrency/04_GIL_multiprocessing.py) — Using multiprocessing for CPU-bound work, comparing it with threading, and protecting process startup with the main guard.
+
 More notes and examples will be added as I continue learning.

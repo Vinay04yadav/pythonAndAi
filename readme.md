@@ -79,5 +79,6 @@ This folder contains introductory examples of using Pydantic models to parse, va
 - [`01_basics/07_self_reference.py`](./13_Pydantic/01_basics/07_self_reference.py) — Defines a recursive comment model with nested replies using a forward reference and `model_rebuild()`.
 - [`01_basics/08_advance_validators.py`](./13_Pydantic/01_basics/08_advance_validators.py) — Shows multi-field validation, data normalization and parsing with before validators, and model-level date-range validation.
 - [`01_basics/09_advance_nested_model.py`](./13_Pydantic/01_basics/09_advance_nested_model.py) — Demonstrates optional nested models, union types for mixed content, and deeply nested organization/address models.
+- [`02_serialization/serial.py`](./13_Pydantic/02_serialization/serial.py) — Serializes a nested Pydantic model to a Python dictionary and JSON, including a datetime field and a custom datetime encoder.
 
 More notes and examples will be added as I continue learning.

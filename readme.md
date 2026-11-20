@@ -49,4 +49,12 @@ This folder explores concurrency, threading, multiprocessing, and the Global Int
 - [`11_process_queue.py`](./11_Threads_Concurrency/11_process_queue.py) — Passing results between processes with a multiprocessing queue.
 - [`12_process_value.py`](./11_Threads_Concurrency/12_process_value.py) — Sharing and safely updating a synchronized integer across processes using `multiprocessing.Value` and its lock.
 
+### `12_Async_python/`
+
+This folder introduces asynchronous programming with `asyncio`, coroutines, and concurrent HTTP requests:
+
+- [`01_async_one.py`](./12_Async_python/01_async_one.py) — Defines and runs a coroutine, using `await asyncio.sleep()` to pause without blocking the event loop.
+- [`02_async_two.py`](./12_Async_python/02_async_two.py) — Runs several chai and coffee brewing coroutines concurrently with `asyncio.gather()`.
+- [`03_async_three.py`](./12_Async_python/03_async_three.py) — Sends three HTTP requests concurrently with `aiohttp`; demonstrates `ClientSession`, `async with`, and unpacking a coroutine list with `*tasks` when calling `asyncio.gather()`.
+
 More notes and examples will be added as I continue learning.

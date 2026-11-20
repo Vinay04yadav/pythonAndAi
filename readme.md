@@ -69,10 +69,15 @@ This folder explores asynchronous programming with `asyncio`, concurrent HTTP re
 This folder contains introductory examples of using Pydantic models to parse, validate, and serialize structured data:
 
 - [`pydanticBasicNotes.py`](./13_Pydantic/pydanticBasicNotes.py) — Summarizes Pydantic's purpose and introduces a basic model with automatic parsing and validation.
-- [`01_basics/first_model.py`](./13_Pydantic/01_basics/first_model.py) — Defines a `User` model, creates instances from keyword arguments or an unpacked dictionary, and demonstrates validation and type conversion.
-- [`01_basics/product_model.py`](./13_Pydantic/01_basics/product_model.py) — Defines a product model with typed fields and a default value.
-- [`01_basics/field_example.py`](./13_Pydantic/01_basics/field_example.py) — Shows typed collection and optional fields, and uses `Field` to describe required fields and constraints.
-- [`01_basics/field_validation.py`](./13_Pydantic/01_basics/field_validation.py) — Demonstrates field-level validation and model-level validation for matching password fields.
-- [`01_basics/computed_property.py`](./13_Pydantic/01_basics/computed_property.py) — Uses `@computed_field` and `@property` to derive totals from model fields and include them in `model_dump()` output.
+- [`bestPractices.py`](./13_Pydantic/bestPractices.py) — Notes on organizing related models, modeling relationships, and considering nesting, validation, and performance.
+- [`01_basics/01_first_model.py`](./13_Pydantic/01_basics/01_first_model.py) — Defines a `User` model, creates instances from keyword arguments or an unpacked dictionary, and demonstrates validation and type conversion.
+- [`01_basics/02_product_model.py`](./13_Pydantic/01_basics/02_product_model.py) — Defines a product model with typed fields and a default value.
+- [`01_basics/03_field_example.py`](./13_Pydantic/01_basics/03_field_example.py) — Shows typed collection and optional fields, and uses `Field` to describe required fields and constraints.
+- [`01_basics/04_field_validation.py`](./13_Pydantic/01_basics/04_field_validation.py) — Demonstrates field-level validation and model-level validation for matching password fields.
+- [`01_basics/05_computed_property.py`](./13_Pydantic/01_basics/05_computed_property.py) — Uses `@computed_field` and `@property` to derive totals from model fields and include them in `model_dump()` output.
+- [`01_basics/06_nested_model.py`](./13_Pydantic/01_basics/06_nested_model.py) — Builds a `User` model from a nested address model or nested dictionary data.
+- [`01_basics/07_self_reference.py`](./13_Pydantic/01_basics/07_self_reference.py) — Defines a recursive comment model with nested replies using a forward reference and `model_rebuild()`.
+- [`01_basics/08_advance_validators.py`](./13_Pydantic/01_basics/08_advance_validators.py) — Shows multi-field validation, data normalization and parsing with before validators, and model-level date-range validation.
+- [`01_basics/09_advance_nested_model.py`](./13_Pydantic/01_basics/09_advance_nested_model.py) — Demonstrates optional nested models, union types for mixed content, and deeply nested organization/address models.
 
 More notes and examples will be added as I continue learning.

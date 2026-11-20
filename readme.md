@@ -64,4 +64,15 @@ This folder explores asynchronous programming with `asyncio`, concurrent HTTP re
 - [`09_race_condition.py`](./12_Async_python/09_race_condition.py) — Illustrates a race condition that can occur when multiple threads update the same shared counter without synchronization.
 - [`10_deadlock.py`](./12_Async_python/10_deadlock.py) — Shows how two threads can deadlock when they acquire the same locks in opposite orders.
 
+### `13_Pydantic/`
+
+This folder contains introductory examples of using Pydantic models to parse, validate, and serialize structured data:
+
+- [`pydanticBasicNotes.py`](./13_Pydantic/pydanticBasicNotes.py) — Summarizes Pydantic's purpose and introduces a basic model with automatic parsing and validation.
+- [`01_basics/first_model.py`](./13_Pydantic/01_basics/first_model.py) — Defines a `User` model, creates instances from keyword arguments or an unpacked dictionary, and demonstrates validation and type conversion.
+- [`01_basics/product_model.py`](./13_Pydantic/01_basics/product_model.py) — Defines a product model with typed fields and a default value.
+- [`01_basics/field_example.py`](./13_Pydantic/01_basics/field_example.py) — Shows typed collection and optional fields, and uses `Field` to describe required fields and constraints.
+- [`01_basics/field_validation.py`](./13_Pydantic/01_basics/field_validation.py) — Demonstrates field-level validation and model-level validation for matching password fields.
+- [`01_basics/computed_property.py`](./13_Pydantic/01_basics/computed_property.py) — Uses `@computed_field` and `@property` to derive totals from model fields and include them in `model_dump()` output.
+
 More notes and examples will be added as I continue learning.

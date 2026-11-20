@@ -51,10 +51,17 @@ This folder explores concurrency, threading, multiprocessing, and the Global Int
 
 ### `12_Async_python/`
 
-This folder introduces asynchronous programming with `asyncio`, coroutines, and concurrent HTTP requests:
+This folder explores asynchronous programming with `asyncio`, concurrent HTTP requests, and using threads and processes alongside async code:
 
 - [`01_async_one.py`](./12_Async_python/01_async_one.py) — Defines and runs a coroutine, using `await asyncio.sleep()` to pause without blocking the event loop.
 - [`02_async_two.py`](./12_Async_python/02_async_two.py) — Runs several chai and coffee brewing coroutines concurrently with `asyncio.gather()`.
 - [`03_async_three.py`](./12_Async_python/03_async_three.py) — Sends three HTTP requests concurrently with `aiohttp`; demonstrates `ClientSession`, `async with`, and unpacking a coroutine list with `*tasks` when calling `asyncio.gather()`.
+- [`04_thread_async.py`](./12_Async_python/04_thread_async.py) — Runs a blocking function in a `ThreadPoolExecutor` from an async coroutine, keeping blocking work off the event-loop thread.
+- [`05_process_async.py`](./12_Async_python/05_process_async.py) — Uses `ProcessPoolExecutor` with `loop.run_in_executor()` to run a function in a separate process from async code.
+- [`06_bgworker.py`](./12_Async_python/06_bgworker.py) — Runs an async order-fetch task alongside a daemon background thread that periodically logs system health.
+- [`07_daemon.py`](./12_Async_python/07_daemon.py) — Demonstrates that a daemon thread runs in the background but does not keep the program alive after the main thread finishes.
+- [`08_non_daemon.py`](./12_Async_python/08_non_daemon.py) — Demonstrates that a non-daemon monitoring thread keeps the program running after the main thread finishes; also introduces basic profiling with `cProfile`.
+- [`09_race_condition.py`](./12_Async_python/09_race_condition.py) — Illustrates a race condition that can occur when multiple threads update the same shared counter without synchronization.
+- [`10_deadlock.py`](./12_Async_python/10_deadlock.py) — Shows how two threads can deadlock when they acquire the same locks in opposite orders.
 
 More notes and examples will be added as I continue learning.
